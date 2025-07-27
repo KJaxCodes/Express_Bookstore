@@ -5,9 +5,9 @@
 let DB_URI;
 
 if (process.env.NODE_ENV === "test") {
-  DB_URI = process.env.DATABASE_URL || "postgresql://postgres:my1stServer@localhost:5432/books-test";
+  DB_URI = process.env.DATABASE_URL || "postgresql://postgres:password@localhost:5432/books-test";
 } else {
-  DB_URI = process.env.DATABASE_URL || "postgresql://postgres:my1stServer@localhost:5432/books";
+  DB_URI = process.env.DATABASE_URL || "postgresql://postgres:password@localhost:5432/books";
 }
 
 console.log("DB_URI:", DB_URI);
